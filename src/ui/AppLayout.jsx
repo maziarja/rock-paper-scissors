@@ -16,11 +16,14 @@ function Home() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    if (performance.navigation.type === performance.navigation.TYPE_RELOAD) {
+    const navigationEntries = performance.getEntriesByType("navigation");
+    if (
+      navigationEntries.length > 0 &&
+      navigationEntries[0].type === "reload"
+    ) {
       navigate("/");
     }
   }, [navigate]);
-
   return (
     <StyledHome>
       <Header />
