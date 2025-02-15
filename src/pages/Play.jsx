@@ -10,14 +10,14 @@ const StyledPlay = styled.div`
   margin-top: 8rem;
   display: flex;
   flex-direction: column;
-  min-height: 55rem;
+  min-height: 38rem;
 
   .competition {
     display: flex;
     justify-content: center;
     gap: 8rem;
     align-items: center;
-    margin-bottom: 12rem;
+    margin-bottom: 8rem;
     @media (min-width: 43.75em) {
       justify-content: space-around;
     }
@@ -26,7 +26,7 @@ const StyledPlay = styled.div`
     color: white;
     font-weight: 600;
     margin: 0 auto;
-    font-size: 6.4rem;
+    font-size: 4.6rem;
     letter-spacing: 1.6px;
     @media (min-width: 43.75em) {
       font-size: 4.6rem;
@@ -35,7 +35,7 @@ const StyledPlay = styled.div`
       font-size: 3.2rem;
 
       position: absolute;
-      top: 38%;
+      top: 35%;
       left: 40%;
     }
     @media (min-width: 75em) {
@@ -45,7 +45,7 @@ const StyledPlay = styled.div`
   button {
     cursor: pointer;
     align-self: center;
-    padding: 1.6rem 7rem;
+    padding: 1.6rem 6rem;
     margin-top: 3rem;
     border-radius: 1rem;
     background-color: white;
@@ -60,7 +60,7 @@ const StyledPlay = styled.div`
       padding: 1.4rem 3.2rem;
       font-size: 1.4rem;
       position: absolute;
-      top: 40%;
+      top: 38%;
       left: 38%;
     }
     @media (min-width: 75em) {

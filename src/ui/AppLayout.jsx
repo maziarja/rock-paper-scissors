@@ -3,6 +3,12 @@ import Footer from "../components/Footer";
 import { useEffect, useState } from "react";
 import Rules from "../components/Rules";
 import { Outlet, useNavigate } from "react-router-dom";
+import styled from "styled-components";
+
+const StyledHome = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
 
 function Home() {
   const [openRules, setOpenRules] = useState(false);
@@ -15,12 +21,12 @@ function Home() {
   }, [navigate]);
 
   return (
-    <>
+    <StyledHome>
       <Header />
       <Outlet />
       <Footer setOpenRules={setOpenRules} />
       <Rules setOpenRules={setOpenRules} openRules={openRules} />
-    </>
+    </StyledHome>
   );
 }
 

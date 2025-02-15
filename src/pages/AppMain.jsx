@@ -9,7 +9,7 @@ import Scissors from "../ui/Scissors";
 const StyledMain = styled.main`
   display: flex;
   margin-top: 8rem;
-  min-height: 55rem;
+  min-height: 38rem;
   justify-content: center;
   & > div {
     position: relative;

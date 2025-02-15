@@ -2,11 +2,12 @@ import styled from "styled-components";
 
 function Footer({ setOpenRules }) {
   const StyledFooter = styled.div`
+    margin-top: 3rem;
     & > button {
       display: flex;
       color: white;
       padding: 1rem 3.4rem;
-      font-size: 1.6rem;
+      font-size: 1.2rem;
       margin: 0 auto;
       font-weight: 500;
       letter-spacing: 1.6px;
