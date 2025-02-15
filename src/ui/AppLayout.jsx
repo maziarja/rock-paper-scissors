@@ -15,15 +15,15 @@ function Home() {
   const [openRules, setOpenRules] = useState(false);
   const navigate = useNavigate();
 
-  // useEffect(() => {
-  //   const navigationEntries = performance.getEntriesByType("navigation");
-  //   if (
-  //     navigationEntries.length > 0 &&
-  //     navigationEntries[0].type === "reload"
-  //   ) {
-  //     navigate("/");
-  //   }
-  // }, [navigate]);
+  useEffect(() => {
+    const navigationEntries = performance.getEntriesByType("navigation");
+    if (
+      navigationEntries.length > 0 &&
+      navigationEntries[0].type === "reload"
+    ) {
+      navigate("/");
+    }
+  }, [navigate]);
   return (
     <StyledHome>
       <Header />
