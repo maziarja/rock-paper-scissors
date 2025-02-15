@@ -4,24 +4,21 @@ import Play from "./pages/Play";
 import GlobalStyles from "./styles/globalStyles";
 import AppMain from "./pages/AppMain";
 
-const router = createBrowserRouter(
-  [
-    {
-      element: <AppLayout />,
-      children: [
-        {
-          path: "/",
-          element: <AppMain />,
-        },
-        {
-          path: "/play",
-          element: <Play />,
-        },
-      ],
-    },
-  ],
-  { basename: "/" }
-);
+const router = createBrowserRouter([
+  {
+    element: <AppLayout />,
+    children: [
+      {
+        path: "/",
+        element: <AppMain />,
+      },
+      {
+        path: "/play",
+        element: <Play />,
+      },
+    ],
+  },
+]);
 
 function App() {
   return (
